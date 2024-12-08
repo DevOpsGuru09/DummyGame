@@ -65,7 +65,7 @@ pipeline {
         stage('Compilation of Code') {
             steps {
                 script {
-                    sh 'mvn clean compile'
+                    sh 'mvn compile'
                 }
             }
         }
