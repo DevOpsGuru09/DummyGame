@@ -59,7 +59,7 @@ pipeline {
     stages {   
         stage('Checkout SCM') {
             steps {
-                git branch: 'main', url: 'https://github.com/DevOpsGuru09/DummyGame.git'
+                git branch: 'main', credentialsId: 'GitHub_Cred', url: 'https://github.com/DevOpsGuru09/DummyGame.git'
             }
         }     
         stage('Compilation of Code') {
